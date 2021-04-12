@@ -6,10 +6,7 @@ namespace EjerciciosOficialesListas
 {
     class tpersona
     {
-        /*Crear la clase (Orientado a Objetos) necesaria para almacenar los datos de una persona.
-        Los datos que se quieren almacenar serán su nombre, edad, teléfono, sexo y si está
-        casado. Tendremos un botón desde el que leeremos los datos y otro botón desde el que
-        los mostraremos. (Ejercicio Resuelto).*/
+        /*Crear la clase para almacenar los datos de una persona.*/
 
         string nombre;
         int edad;
@@ -57,8 +54,5 @@ namespace EjerciciosOficialesListas
         {
             return this.casado;
         }
-        /*Apoyándoos en el ejercicio anterior, realizar un programa que trabaje con una lista de
-        personas. Realizar un botón para leer los datos de una persona y otro para imprimir los
-        datos de todas las personas.*/
     }
 }

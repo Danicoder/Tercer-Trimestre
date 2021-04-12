@@ -7,6 +7,7 @@ namespace EjerciciosOficialesListas
         static void Main()
         {
             tpersona Person1 = new tpersona();
+
             Person1.SetEdad(25);
             Person1.Setnombre("Manuel");
             Person1.Settelefono("6428567892");
