@@ -7,6 +7,7 @@ namespace EjerciciosOficialesListas
         static void Main()
         {
             tpersona Person1 = new tpersona();
+            PeopleDataBase datos = new PeopleDataBase();
 
             Person1.SetEdad(25);
             Person1.Setnombre("Manuel");
@@ -14,6 +15,7 @@ namespace EjerciciosOficialesListas
             Person1.Setsexo("Masculino");
             Person1.Setcasado(true);
 
+            datos.AddDatosPersona(SetEdad);
 
             Console.WriteLine("La edad es:{0} ",Person1.Getedad());
             Console.WriteLine("El nombre es:{0} ", Person1.Getnombre());
