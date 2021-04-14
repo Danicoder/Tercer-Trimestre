@@ -54,5 +54,18 @@ namespace EjerciciosOficialesListas
         {
             return this.casado;
         }
+        public void imprimirpersona()
+        {
+            Console.WriteLine("Nombre: ",nombre);
+            Console.WriteLine("Edad: ",edad);
+            Console.WriteLine("Teléfono: ",telefono);
+            Console.WriteLine("Sexo: ", sexo);
+            if (casado == true)
+            {
+                Console.WriteLine("Es casado ");
+            }
+            else Console.WriteLine("No es casado ");
+            
+        }
     }
 }
