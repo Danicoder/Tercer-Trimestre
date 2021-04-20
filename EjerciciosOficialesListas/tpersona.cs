@@ -54,6 +54,7 @@ namespace EjerciciosOficialesListas
         {
             return this.casado;
         }
+        //imprimir los datos de todas las personas
         public void imprimirpersona()
         {
             Console.WriteLine("Nombre: ",nombre);

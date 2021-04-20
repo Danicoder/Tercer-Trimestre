@@ -7,9 +7,10 @@ namespace EjerciciosOficialesListas
         static void Main()
         {
             List<tpersona> ListaEmpleados = new List<tpersona>();
-
+            List<tpersona> LeerDatos = new List<tpersona>();
+            
+            //creo una persona
             tpersona Person1 = new tpersona();
-
 
             Person1.SetEdad(25);
             Person1.Setnombre("Manuel");
