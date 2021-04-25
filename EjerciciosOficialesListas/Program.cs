@@ -6,16 +6,20 @@ namespace EjerciciosOficialesListas
     {
         static void Main()
         {
-            List<tpersona> ListaEmpleados = new List<tpersona>();
-
-            funciones.MenuPrincipal();
-            int option = Convert.ToInt32(Console.ReadLine());
-            switch(option)
-            {
-                case 1: funciones.SolicitarDatos(ListaEmpleados);
+                List<tpersona> ListaEmpleados = new List<tpersona>();
+                comienzo:
+                funciones.MenuPrincipal();
+                int option = Convert.ToInt32(Console.ReadLine());
+                switch (option)
+                {
+                    case 1:
+                        funciones.SolicitarDatos(ListaEmpleados);
+                        goto comienzo;
+                    case 2:
+                        funciones.PrintSaveData(ListaEmpleados);
                         break;
-                case 2: tpersona.imprimirpersona();
-            }
+                    case 3: break;
+                }
         }
     }
 }

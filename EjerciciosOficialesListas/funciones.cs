@@ -46,6 +46,15 @@ namespace EjerciciosOficialesListas
             }
             while(respuesta == 's');
         }
-        
+        public static void PrintSaveData(List<tpersona> Lalista)
+        {
+            if (Lalista.Count == 0)
+                Console.WriteLine("No hay empleados disponibles.");
+            else
+            {
+                for (int i = 0; i < Lalista.Count; i++)
+                    Lalista[i].imprimirpersona();
+            }
+        }
     }
 }
