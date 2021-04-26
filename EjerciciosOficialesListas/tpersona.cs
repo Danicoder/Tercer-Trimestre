@@ -27,15 +27,15 @@ namespace EjerciciosOficialesListas
         //imprimir los datos de todas las personas
         public void imprimirpersona()
         {
-            Console.WriteLine("Nombre: ", nombre);
-            Console.WriteLine("Edad: ", edad);
-            Console.WriteLine("Teléfono: ", telefono);
-            Console.WriteLine("Sexo: ", sexo);
+            Console.WriteLine("Nombre: {0} ", nombre);
+            Console.WriteLine("Edad: {0}", edad);
+            Console.WriteLine("Teléfono: {0}", telefono);
+            Console.WriteLine("Sexo: {0}", sexo);
             if (casado == true)
             {
-                Console.WriteLine("Es casado ");
+                Console.WriteLine("Es casado");
             }
-            else Console.WriteLine("No es casado ");
+            else Console.WriteLine("No es casado");
         }
     }
 }

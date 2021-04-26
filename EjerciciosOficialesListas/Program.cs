@@ -6,7 +6,9 @@ namespace EjerciciosOficialesListas
     {
         static void Main()
         {
-                List<tpersona> ListaEmpleados = new List<tpersona>();
+            List<tpersona> ListaEmpleados = new List<tpersona>();
+            List<fecha> ListaFecha = new List<fecha>();
+
                 comienzo:
                 funciones.MenuPrincipal();
                 int option = Convert.ToInt32(Console.ReadLine());
