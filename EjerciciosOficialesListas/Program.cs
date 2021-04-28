@@ -10,15 +10,15 @@ namespace EjerciciosOficialesListas
             List<fecha> ListaFecha = new List<fecha>();
 
                 comienzo:
-                funciones.MenuPrincipal();
+                Utils.MenuPrincipal();
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
-                        funciones.SolicitarDatos(ListaEmpleados);
+                        Utils.SolicitarDatos(ListaEmpleados);
                         goto comienzo;
                     case 2:
-                        funciones.PrintSaveData(ListaEmpleados);
+                        Utils.PrintSaveData(ListaEmpleados);
                         break;
                     case 3: break;
                 }

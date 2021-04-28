@@ -27,17 +27,28 @@ namespace EjerciciosOficialesListas
         public void Setyear(int year){ this.year = year; }
         public int Getyear() { return year; }
 
-        public int OrdenarLista(List<fecha> ListaFecha)
+        public void OrdenarLista(List<fecha> ListaFecha)
         {
-            int aux;
+            fecha aux;
             for(int i = 0; i < ListaFecha.Count-1; i++)
             {
                 for(int j = 0; j < ListaFecha.Count; j++)
                 {
-                    ListaFecha[i].ObtenerFecha()
+                    if(ListaFecha[i].ObtenerFecha() < ListaFecha[j].ObtenerFecha())
+                    {
+                        aux = ListaFecha[i];
+                        ListaFecha[i] = ListaFecha[j];
+                        ListaFecha[j] = aux;
+                    }
                 }
             }
-            
+        }
+        // imprimir lista
+        public void PrintDateList()
+        {
+            Console.WriteLine("El día es: {0}", dia);
+            Console.WriteLine("El mes es: {0}", mes);
+            Console.WriteLine("El año es: {0}", year);
         }
     }
 }

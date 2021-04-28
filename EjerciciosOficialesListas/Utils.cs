@@ -4,11 +4,12 @@ using System.Text;
 
 namespace EjerciciosOficialesListas
 {
-    class funciones
+    class Utils
     {
 
         // Creamos la lista
         List<tpersona> LeerDatos = new List<tpersona>();
+        List<fecha> LeerFecha = new List<fecha>();
 
         /*al ser una funcion de la propia clase tengo que poner static, de lo 
         contario me exigiría en el program colocar un objeto como referencia del mismo.*/
@@ -56,5 +57,19 @@ namespace EjerciciosOficialesListas
                     Lalista[i].imprimirpersona();
             }
         }
+        public static void AskUser(List<fecha> Datadates)
+        {
+            fecha SaveDatas = new fecha();
+
+            Console.WriteLine("Dime el mes");
+            SaveDatas.Setmes(Convert.ToInt32(Console.ReadLine()));
+            Console.WriteLine("Dime el día");
+            SaveDatas.Setdia(Convert.ToInt32(Console.ReadLine()));
+            Console.WriteLine("Dime el año");
+            SaveDatas.Setyear(Convert.ToInt32(Console.ReadLine()));
+
+            Datadates.Add(SaveDatas);
+        }
+        
     }
 }
