@@ -20,6 +20,14 @@ namespace EjerciciosOficialesListas
             Console.WriteLine("2) Deseas imprimir los datos del empleado");
             Console.WriteLine("3) Deseas salir del menu");
         }
+        public static void MainMenuDate()
+        {
+            Console.WriteLine("¿Qué opción quieres?");
+            Console.WriteLine("------------------------");
+            Console.WriteLine("1) Deseas introducir la fecha");
+            Console.WriteLine("2) Deseas ordenar la lista");
+            Console.WriteLine("3) Deseas imprimir la lista");
+        }
         //solicitar datos
         public static void SolicitarDatos(List<tpersona> Lalista)
         {
@@ -47,6 +55,7 @@ namespace EjerciciosOficialesListas
             }
             while(respuesta == 's');
         }
+        //recorrer lista de persona
         public static void PrintSaveData(List<tpersona> Lalista)
         {
             if (Lalista.Count == 0)
@@ -57,6 +66,18 @@ namespace EjerciciosOficialesListas
                     Lalista[i].imprimirpersona();
             }
         }
+        //recorrer la lista de la fecha
+        public static void GotoList(List<fecha> RecorrerLista)
+        {
+            if (RecorrerLista.Count == 0)
+                Console.WriteLine("No hay fechas disponibles");
+            else
+                for(int i = 0; i < RecorrerLista.Count; i++)
+                {
+                    RecorrerLista[i].PrintDateList();
+                }
+        }
+        //preguntar al usuario la fecha
         public static void AskUser(List<fecha> Datadates)
         {
             fecha SaveDatas = new fecha();
@@ -70,6 +91,22 @@ namespace EjerciciosOficialesListas
 
             Datadates.Add(SaveDatas);
         }
-        
+        //ordena la lista
+        public static void SortList(List<fecha> ListaFecha)
+        {
+            fecha aux;
+            for (int i = 0; i < ListaFecha.Count - 1; i++)
+            {
+                for (int j = 0; j < ListaFecha.Count; j++)
+                {
+                    if (ListaFecha[i].ObtenerFecha() < ListaFecha[j].ObtenerFecha())
+                    {
+                        aux = ListaFecha[i];
+                        ListaFecha[i] = ListaFecha[j];
+                        ListaFecha[j] = aux;
+                    }
+                }
+            }
+        }
     }
 }
