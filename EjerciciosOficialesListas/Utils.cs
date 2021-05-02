@@ -107,6 +107,7 @@ namespace EjerciciosOficialesListas
                     }
                 }
             }
+            Console.WriteLine("Lista ordenda, sí quieres ver la lista ordenada vuelve al menu opción 3");
         }
     }
 }
