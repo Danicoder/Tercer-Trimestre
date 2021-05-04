@@ -11,7 +11,7 @@ namespace EjerciciosOficialesListas
 
             while (true)
             {
-                Utils.MenuPrincipal();
+                MainMenu.MenuPrincipal();
                 int option = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Recuerda que si quieres salir del programa debes pulsar 0");
                 if (option == 0)
@@ -33,7 +33,7 @@ namespace EjerciciosOficialesListas
 
             while (true)
             {
-                Utils.MainMenuDate();
+                MainMenu.MainMenuDate();
                 int optionFecha = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Recuerda que para salir del programa debes pulsar cero");
                 switch (optionFecha)
@@ -49,6 +49,15 @@ namespace EjerciciosOficialesListas
                         break;
                     default: Console.WriteLine("Ninguna de las opciones a eleguir ha sido seleccionada");
                         break;
+                }
+            }
+            while(true)
+            {
+                MainMenu.Mainemployees();
+                int Option = Convert.ToInt32(Console.ReadLine());
+                switch(Option)
+                {
+                    case 1: 
                 }
             }
         }
@@ -82,4 +91,9 @@ for(int i = 0; i < listaAlum,no.Count; i++)
 {
     if(nombre == ListaAlumno[i].ListaAlumnos.GetNombre())
         ListaAlumno[i].ImrpimeNotas()
-}*/
+}
+
+ ordenar
+List<tlista>
+if(Lista[i].Getnombre()...)
+if(cod1.CompareTo(cad2))*/

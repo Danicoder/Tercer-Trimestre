@@ -35,6 +35,5 @@ namespace EjerciciosOficialesListas
             Console.WriteLine("El mes es: {0}", mes);
             Console.WriteLine("El año es: {0}", year);
         }
-        //DEVOLVER GUARDAR ALGO QUE VA A LOS ATRIBUTOS
     }
 }

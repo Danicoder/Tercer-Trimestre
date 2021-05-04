@@ -11,33 +11,7 @@ namespace EjerciciosOficialesListas
         List<tpersona> LeerDatos = new List<tpersona>();
         List<fecha> LeerFecha = new List<fecha>();
 
-        /*al ser una funcion de la propia clase tengo que poner static, de lo 
-        contario me exigiría en el program colocar un objeto como referencia del mismo.*/
-        public static void MenuPrincipal()
-        {
-            Console.WriteLine("¿Qué opción quieres?");
-            Console.WriteLine("1) Deseas insertar datos de un empleado");
-            Console.WriteLine("2) Deseas imprimir los datos del empleado");
-            Console.WriteLine("3) Deseas salir del menu");
-        }
-        public static void MainMenuDate()
-        {
-            Console.WriteLine("¿Qué opción quieres?");
-            Console.WriteLine("------------------------");
-            Console.WriteLine("1) Deseas introducir la fecha");
-            Console.WriteLine("2) Deseas ordenar la lista");
-            Console.WriteLine("3) Deseas imprimir la lista");
-        }
-        public static void Mainemployees()
-        {
-            Console.WriteLine("¿Qué opción quieres?");
-            Console.WriteLine("------------------------");
-            Console.WriteLine("1) Introducir un nuevo empleado");
-            Console.WriteLine("2) Añadir venta");
-            Console.WriteLine("3) Mostrar la lista de empleados");
-            Console.WriteLine("4) Cumpleaños del empleado");
-        }
-        //solicitar datos
+        //solicitar datos de tpersona
         public static void SolicitarDatos(List<tpersona> Lalista)
         {
             //creo un objeto persona
@@ -64,7 +38,7 @@ namespace EjerciciosOficialesListas
             }
             while(respuesta == 's');
         }
-        //recorrer lista de persona
+        //recorrer lista de tpersona
         public static void PrintSaveData(List<tpersona> Lalista)
         {
             if (Lalista.Count == 0)
@@ -100,7 +74,7 @@ namespace EjerciciosOficialesListas
 
             Datadates.Add(SaveDatas);
         }
-        //ordena la lista
+        //ordena la lista de la fecha
         public static void SortList(List<fecha> ListaFecha)
         {
             fecha aux;

@@ -43,6 +43,11 @@ namespace EjerciciosOficialesListas
             Lista.Add(salesQuantity);
         }
         //Solicitar fecha de cumpleaños del empleado y guardarlo
-
+        /*• El botón de Cumpleaños de Empleado pedirá el nombre del empleado y le
+sumarán un año llamando al método cumpleAnyos del objeto.*/
+        public static void BirthdayDate(List<tEmpleado> Lista)
+        {
+            Console.WriteLine("nombre del empleado");
+        }
     }
 }
