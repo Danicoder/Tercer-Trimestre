@@ -27,6 +27,8 @@ namespace EjerciciosOficialesListas
         //imprimir los datos de todas las personas
         public void imprimirpersona()
         {
+            Console.WriteLine("Datos del Empelado: ");
+            Console.WriteLine("___________________");
             Console.WriteLine("Nombre: {0} ", nombre);
             Console.WriteLine("Edad: {0}", edad);
             Console.WriteLine("Teléfono: {0}", telefono);

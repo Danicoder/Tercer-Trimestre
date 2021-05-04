@@ -28,6 +28,15 @@ namespace EjerciciosOficialesListas
             Console.WriteLine("2) Deseas ordenar la lista");
             Console.WriteLine("3) Deseas imprimir la lista");
         }
+        public static void Mainemployees()
+        {
+            Console.WriteLine("¿Qué opción quieres?");
+            Console.WriteLine("------------------------");
+            Console.WriteLine("1) Introducir un nuevo empleado");
+            Console.WriteLine("2) Añadir venta");
+            Console.WriteLine("3) Mostrar la lista de empleados");
+            Console.WriteLine("4) Cumpleaños del empleado");
+        }
         //solicitar datos
         public static void SolicitarDatos(List<tpersona> Lalista)
         {
