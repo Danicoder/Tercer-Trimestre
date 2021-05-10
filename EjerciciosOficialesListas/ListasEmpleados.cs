@@ -4,11 +4,11 @@ using System.Text;
 
 namespace EjerciciosOficialesListas
 {
-    class GestionEmpleados
+    class ListasEmpleados
     {
         List<tEmpleado> ReadEmployes = new List<tEmpleado>();
 
-        //obtener datos del empleado
+        //obtener datos del empleado nuevo
         public static void NewEmployee(List<tEmpleado> Lista)
         {
             tEmpleado Employee = new tEmpleado();
@@ -32,7 +32,7 @@ namespace EjerciciosOficialesListas
             while (option == 's');
         }
         //Opción de añadir venta
-        public static void AddList(List<tEmpleado> Lista)
+        public static void AddSale(List<tEmpleado> Lista)
         {
             tEmpleado salesQuantity = new tEmpleado();
             Console.WriteLine("nombre del empleado");
@@ -43,11 +43,27 @@ namespace EjerciciosOficialesListas
             Lista.Add(salesQuantity);
         }
         //Solicitar fecha de cumpleaños del empleado y guardarlo
-        /*• El botón de Cumpleaños de Empleado pedirá el nombre del empleado y le
-sumarán un año llamando al método cumpleAnyos del objeto.*/
+        /*El botón de Cumpleaños de Empleado pedirá el nombre del empleado y le
+        sumarán un año llamando al método cumpleAnyos del objeto.*/
         public static void BirthdayDate(List<tEmpleado> Lista)
         {
+            tEmpleado dateBirthday = new tEmpleado();
             Console.WriteLine("nombre del empleado");
+            dateBirthday.Setnombre(Console.ReadLine());
+            Console.WriteLine("teclea la fecha de cumpleaños");
+            Console.WriteLine("Dime el día: ");
+            Console.WriteLine("Dime el mes: ");
+            Console.WriteLine("Dime el año: ");
+            dateBirthday.SetBirtday(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()));
+
+            Lista.Add(dateBirthday);
+        }
+        public static void PrintEmployes(List<tEmpleado> ListEmployee)
+        {
+            for(int i = 0; i < ListEmployee.Count;i++)
+            {
+                ListEmployee[i].imprimirEmpleado();
+            }
         }
     }
 }

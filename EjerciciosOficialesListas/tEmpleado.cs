@@ -12,7 +12,7 @@ namespace EjerciciosOficialesListas
         string telefono;
         string sexo;
         float cantidadVentas;
-        string FechaCumpleaños;
+        int FechaCumpleaños;
 
         public void SetEdad(int edad) { this.edad = edad; }
         public int Getedad() { return edad; }
@@ -25,11 +25,11 @@ namespace EjerciciosOficialesListas
         public void Setsexo(string sexo) { this.sexo = sexo; }
         public string Getsexo() { return sexo; }
         public void SetcantidadVentas(float nVentas) { this.cantidadVentas = nVentas; }
-        public bool GetcantidadVentas() { return cantidadVentas; }
-        public void SetBirtday(string Cumpleaños) { FechaCumpleaños = Cumpleaños; }
-        public bool GetBirtday() { return FechaCumpleaños; }
+        public float GetcantidadVentas() { return cantidadVentas; }
+        public void SetBirtday(int day, int month, int year) { FechaCumpleaños = day; FechaCumpleaños = month; FechaCumpleaños = year; }
+        public int GetBirtday() { return FechaCumpleaños; }
 
-        public void imprimirpersona()
+        public void imprimirEmpleado()
         {
             Console.WriteLine("Datos del Empelado: ");
             Console.WriteLine("___________________");
@@ -37,11 +37,7 @@ namespace EjerciciosOficialesListas
             Console.WriteLine("Edad: {0}", edad);
             Console.WriteLine("Teléfono: {0}", telefono);
             Console.WriteLine("Número de ventas: {0}", cantidadVentas);
-            if (cantidadVentas == true)
-            {
-                Console.WriteLine("Ha vendndido");
-            }
-            else Console.WriteLine("No tiene ningúna venta");
-        }     
+            Console.WriteLine("El cumpleaños del empleado es: " + FechaCumpleaños);
+        }
     }
 }

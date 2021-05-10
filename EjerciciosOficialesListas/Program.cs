@@ -4,13 +4,16 @@ namespace EjerciciosOficialesListas
 {
     class Program
     {
+        
         static void Main()
         {
-            List<tpersona> ListaEmpleados = new List<tpersona>();
+            List<tpersona> ListaPersona = new List<tpersona>();
             List<fecha> ListaFecha = new List<fecha>();
-
-            while (true)
+            List<tEmpleado> ListaEmpleados = new List<tEmpleado>();
+           
+            /*while (true)
             {
+                
                 MainMenu.MenuPrincipal();
                 int option = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Recuerda que si quieres salir del programa debes pulsar 0");
@@ -19,10 +22,10 @@ namespace EjerciciosOficialesListas
                 switch (option)
                 {
                     case 1:
-                        Utils.SolicitarDatos(ListaEmpleados);
+                        Utils.SolicitarDatos(ListaPersona);
                         break;
                     case 2:
-                        Utils.PrintSaveData(ListaEmpleados);//recorre la lista
+                        Utils.PrintSaveData(ListaPersona);//recorre la lista
                         break;
                     case 3: break;
                     default:
@@ -50,7 +53,8 @@ namespace EjerciciosOficialesListas
                     default: Console.WriteLine("Ninguna de las opciones a eleguir ha sido seleccionada");
                         break;
                 }
-            }
+            }*/
+
             while(true)
             {
                 MainMenu.Mainemployees();
@@ -58,6 +62,17 @@ namespace EjerciciosOficialesListas
                 switch(Option)
                 {
                     case 1: 
+                        ListasEmpleados.NewEmployee(ListaEmpleados);
+                        break;
+                    case 2: ListasEmpleados.AddSale(ListaEmpleados);
+                        break;
+                    case 3: ListasEmpleados.PrintEmployes(ListaEmpleados);
+                        break;
+                    case 4: ListasEmpleados.BirthdayDate(ListaEmpleados);
+                        break;
+                    default:
+                        Console.WriteLine("Ninguna de las opciones a eleguir ha sido seleccionada");
+                        break;
                 }
             }
         }
