@@ -45,7 +45,7 @@ namespace ClientesDatos
                     {
                         ListaCliente.Insert(i, cliente);
                     }
-                    else if (ListaCliente[i].Getdni().CompareTo(cliente.Getdni()) ==1 && i == ListaCliente.Count-1)
+                    else if (ListaCliente[i].Getdni().CompareTo(cliente.Getdni()) == 1 && i == ListaCliente.Count-1)
                     {
                         ListaCliente.Add(cliente);
                     }
